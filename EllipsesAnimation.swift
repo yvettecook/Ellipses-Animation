@@ -1,7 +1,12 @@
-//: Playground - noun: a place where people can play
+//
+//  EllipsesAnimation.swift
+//  
+//
+//  Created by Yvette Cook on 25/01/2016.
+//
+//
 
 import UIKit
-import XCPlayground
 import QuartzCore
 
 class EllipseAnimation: UIView {
@@ -25,7 +30,7 @@ class EllipseAnimation: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     func staticSetUp() {
         circle1 = UIView(frame: CGRect(x: 50, y: 130, width: 40, height: 40))
         circle1!.layer.cornerRadius = 20.0
@@ -87,10 +92,3 @@ class EllipseAnimation: UIView {
     }
     
 }
-
-let animation = EllipseAnimation(speed: 1.0, circleColor: UIColor.whiteColor(), repeatCount: 100)
-XCPlaygroundPage.currentPage.liveView = animation
-animation.animate()
-
-
-
